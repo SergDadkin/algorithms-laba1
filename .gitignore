@@ -1,26 +1,17 @@
-# Операционные системы / редакторы
-.DS_Store
-Thumbs.db
-.idea/
-.vscode/
-*.swp
+# 1. Блокируем абсолютно все файлы и папки в проекте
+*
 
-# Python
-__pycache__/
-*.py[cod]
-*.egg-info/
-.venv/
-venv/
-.ipynb_checkpoints/
+# 2. Делаем исключения для конкретных папок, чтобы Гит мог в них зайти
+!M1-intro-and-basic-structures/
+!M1-intro-and-basic-structures/attachments/
 
-# Временные файлы офисных приложений
-~$*.docx
-~$*.xlsx
-~$*.pptx
-*.tmp
+# 3. Игнорируем всё внутри этих папок обратно
+M1-intro-and-basic-structures/*
+M1-intro-and-basic-structures/attachments/*
 
-# Локальный отчёт проверки репозитория
-validation-report.txt
-
-# Локально генерируемые данные (scripts/generate_data.py)
-data/generated/
+# 4. И наконец — разрешаем ТОЛЬКО наши конкретные файлы
+!M1-intro-and-basic-structures/attachments/lab01-complexity-starter.py
+!lab01_loglog.png
+!lab01_binary_pow.png
+!README.md
+!.gitignore
