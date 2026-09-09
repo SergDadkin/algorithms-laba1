@@ -1,17 +1,27 @@
-# Игнорируем стандартный мусор
+# Стандартные скрытые файлы и окружение
 .venv/
 __pycache__/
 *.pyc
-data/generated/
 
-# Игнорируем ВСЕ остальные лабораторные и папки курса
-docs/
-scripts/
+# Список папок и файлов, которые нужно скрыть из вашего репозитория:
+requirements.txt
+tests/
+team/
+resources/
+other/
+methodical-guidelines/
+lectures/
+data/
+Exam/
+Cases/
+.github/
+
+# Дополнительно скрываем все остальные лабораторные работы, если они есть
 M2-*/
 M3-*/
 M4-*/
 
-# Заставим Git игнорировать всё внутри нашей папки, КРОМЕ стартера
+# Скрываем всё внутри первой лабораторной, КРОМЕ вашего файла с кодом
 M1-intro-and-basic-structures/*
 !M1-intro-and-basic-structures/attachments/
 M1-intro-and-basic-structures/attachments/*
