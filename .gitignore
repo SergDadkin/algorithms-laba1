@@ -1,17 +1,18 @@
-# 1. Блокируем абсолютно все файлы и папки в проекте
-*
+# Игнорируем стандартный мусор
+.venv/
+__pycache__/
+*.pyc
+data/generated/
 
-# 2. Делаем исключения для конкретных папок, чтобы Гит мог в них зайти
-!M1-intro-and-basic-structures/
-!M1-intro-and-basic-structures/attachments/
+# Игнорируем ВСЕ остальные лабораторные и папки курса
+docs/
+scripts/
+M2-*/
+M3-*/
+M4-*/
 
-# 3. Игнорируем всё внутри этих папок обратно
+# Заставим Git игнорировать всё внутри нашей папки, КРОМЕ стартера
 M1-intro-and-basic-structures/*
+!M1-intro-and-basic-structures/attachments/
 M1-intro-and-basic-structures/attachments/*
-
-# 4. И наконец — разрешаем ТОЛЬКО наши конкретные файлы
 !M1-intro-and-basic-structures/attachments/lab01-complexity-starter.py
-!lab01_loglog.png
-!lab01_binary_pow.png
-!README.md
-!.gitignore
